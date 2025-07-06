@@ -10,13 +10,13 @@ interface FileItemProps {
   onEdit: (id: string, name: string) => void;
 }
 
-export const FileItem: React.FC<FileItemProps> = ({
+export const FileItem = ({
   file,
   isActive,
   onClick,
   onDelete,
   onEdit,
-}) => {
+}: FileItemProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editName, setEditName] = useState(file.name);
 

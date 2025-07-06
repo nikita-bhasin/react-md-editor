@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { 
   Folder as FiFolder, 
   File as FiFile, 
-  Plus as FiPlus 
 } from 'lucide-react';
 import { FileExplorer } from '../FileExplorer/FileExplorer';
 import type { FileType, FolderType } from '../../types';

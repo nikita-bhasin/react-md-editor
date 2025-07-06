@@ -8,10 +8,10 @@ interface PreviewProps {
   className?: string;
 }
 
-export const Preview: React.FC<PreviewProps> = ({
+export const Preview = ({
   content,
   className = '',
-}) => {
+}: PreviewProps) => {
   const previewRef = useRef<HTMLDivElement>(null);
 
   const handleDownloadPDF = () => {
